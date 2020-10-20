@@ -31,3 +31,23 @@ class FeedViewController: UICollectionViewController {
 
 }
 
+//import SwiftUI
+//
+//struct MainPreview: PreviewProvider {
+//    static var previews: some View {
+////        Text("dsfssdffdsafas")
+//        ContainerView()
+//    }
+//
+//    struct ContainerView: UIViewControllerRepresentable {
+//
+//        func makeUIViewController(context: UIViewControllerRepresentableContext<MainPreview.ContainerView>) -> UIViewController {
+//            FeedViewController()
+//        }
+//
+//        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+//
+//        }
+//    }
+//}
+
