@@ -8,15 +8,21 @@
 
 import UIKit
 
-class FeedViewController: UICollectionViewController {
+class FeedViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    let cellId = "cellid"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .yellow
+        collectionView.register(FeedCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.alwaysBounceVertical = true
         setupUI()
     }
     
     private func setupUI() {
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         title = "Facebook Feed"
         setupNavBar()
     }
@@ -27,16 +33,31 @@ class FeedViewController: UICollectionViewController {
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        3
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+
+        return item
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: view.frame.width, height: 100)
+    }
 
 
 }
+
 
 //import SwiftUI
 //
 //struct MainPreview: PreviewProvider {
 //    static var previews: some View {
 ////        Text("dsfssdffdsafas")
-//        ContainerView()
+//        ContainerView().edgesIgnoringSafeArea(.all)
 //    }
 //
 //    struct ContainerView: UIViewControllerRepresentable {

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "170418-facebook-f8-zuckerberg-ew-0156p_1ef15710540d3ec2bbabc02e5dba3991.fit-760w.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

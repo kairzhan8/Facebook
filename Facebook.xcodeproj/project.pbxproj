@@ -12,6 +12,7 @@
 		556E1151253F1F3E004862FD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E1150253F1F3E004862FD /* FeedViewController.swift */; };
 		556E1156253F1F43004862FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556E1155253F1F43004862FD /* Assets.xcassets */; };
 		556E1159253F1F43004862FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556E1157253F1F43004862FD /* LaunchScreen.storyboard */; };
+		556E1163253F42EE004862FD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E1162253F42EE004862FD /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		556E1155253F1F43004862FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556E1158253F1F43004862FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556E115A253F1F43004862FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556E1162253F42EE004862FD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				556E1155253F1F43004862FD /* Assets.xcassets */,
 				556E1157253F1F43004862FD /* LaunchScreen.storyboard */,
 				556E115A253F1F43004862FD /* Info.plist */,
+				556E1162253F42EE004862FD /* FeedCell.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556E1151253F1F3E004862FD /* FeedViewController.swift in Sources */,
+				556E1163253F42EE004862FD /* FeedCell.swift in Sources */,
 				556E114D253F1F3E004862FD /* AppDelegate.swift in Sources */,
 				556E114F253F1F3E004862FD /* SceneDelegate.swift in Sources */,
 			);
